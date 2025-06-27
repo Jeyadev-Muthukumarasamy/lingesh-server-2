@@ -12,7 +12,7 @@ cloudinary.config({
 });
 
 // Create multer instance with storage configuration
-const upload = multer({ dest: 'Uploads/' });
+const upload = multer({ dest: '/tmp' });
 
 export const postMedia = async (req: Request, res: Response) => {
     console.log(req.body)
